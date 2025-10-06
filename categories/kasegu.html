@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>稼ぐ - 副業・SNS運用 | マネオタニートの金融オタロード</title>
+    <meta name="description" content="副業、SNS運用に関する記事一覧。在宅でできる現実的な収入源を模索し、家計の足しにする挑戦を紹介します。">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../article-styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <a href="../index.html" class="home-link">
+                    <img src="../assets/logo_final_transparent.png" alt="ロゴ" class="logo">
+                    <span>マネオタニートの金融オタロード</span>
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="mamoru.html" class="nav-link">守る</a>
+                <a href="huyasu.html" class="nav-link">殖やす</a>
+                <a href="kasegu.html" class="nav-link active">稼ぐ</a>
+                <a href="../index.html#about" class="nav-link">プロフィール</a>
+                <a href="../index.html#contact" class="nav-link">お問い合わせ</a>
+            </div>
+            <button class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay">
+        <div class="nav-content">
+            <button class="nav-close">&times;</button>
+            <div class="nav-items">
+                <a href="mamoru.html" class="nav-item">守る</a>
+                <a href="huyasu.html" class="nav-item">殖やす</a>
+                <a href="kasegu.html" class="nav-item">稼ぐ</a>
+                <a href="../index.html#about" class="nav-item">プロフィール</a>
+                <a href="../index.html#contact" class="nav-item">お問い合わせ</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Category Hero -->
+    <section class="category-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">ホーム</a>
+                <span class="separator">></span>
+                <span>稼ぐ</span>
+            </div>
+            <div class="category-header">
+                <div class="category-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <div class="category-info">
+                    <h1 class="category-title">稼ぐ</h1>
+                    <p class="category-description">
+                        副業・SNS運用で収入の柱を増やす。在宅でできる現実的な収入源を模索し、家計の足しにする挑戦。
+                        ブログ運営、SNSマネタイズ、在宅ワークなど、実際に試した方法を成功・失敗問わず紹介しています。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section class="articles-section">
+        <div class="container">
+            <div class="articles-header">
+                <h2>記事一覧</h2>
+                <div class="articles-count">
+                    <span id="articles-count">記事を読み込み中...</span>
+                </div>
+            </div>
+            
+            <div class="articles-grid" id="articles-grid">
+                <!-- 記事は JavaScript で動的に読み込まれます -->
+            </div>
+            
+            <!-- ページネーション（将来の拡張用） -->
+            <div class="pagination" id="pagination" style="display: none;">
+                <button class="pagination-btn" id="prev-btn">前のページ</button>
+                <div class="pagination-numbers" id="pagination-numbers"></div>
+                <button class="pagination-btn" id="next-btn">次のページ</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="../assets/logo_final_transparent.png" alt="ロゴ" class="footer-logo">
+                    <span>マネオタニートの金融オタロード</span>
+                </div>
+                <div class="footer-links">
+                    <a href="mamoru.html">守る</a>
+                    <a href="huyasu.html">殖やす</a>
+                    <a href="kasegu.html">稼ぐ</a>
+                    <a href="../index.html#about">プロフィール</a>
+                    <a href="../index.html#contact">お問い合わせ</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 マネオタニートの金融オタロード. All rights reserved.</p>
+                <p>免責事項: このブログの内容は個人の体験に基づくものです。投資判断は自己責任でお願いします。</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- カテゴリページ用記事読み込みスクリプト -->
+    <script src="../category-articles-loader.js"></script>
+    
+    <script>
+        // Simple mobile navigation toggle
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-overlay').classList.add('active');
+        });
+
+        document.querySelector('.nav-close').addEventListener('click', function() {
+            document.querySelector('.nav-overlay').classList.remove('active');
+        });
+
+        // Close overlay when clicking on nav items
+        document.querySelectorAll('.nav-item').forEach(item => {
+            item.addEventListener('click', function() {
+                document.querySelector('.nav-overlay').classList.remove('active');
+            });
+        });
+
+        // カテゴリページ初期化
+        document.addEventListener('DOMContentLoaded', () => {
+            new CategoryArticleLoader('kasegu');
+        });
+    </script>
+</body>
+</html>
