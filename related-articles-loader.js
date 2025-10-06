@@ -64,8 +64,12 @@ class RelatedArticlesLoader {
     }
 
     renderRelatedArticles() {
+        // メインの関連記事セクション
         const relatedContainer = document.getElementById('related-articles');
-        if (!relatedContainer) return;
+        // サイドバーの関連記事コンテナ
+        const sidebarContainer = document.getElementById('related-articles-container');
+        
+        if (!relatedContainer && !sidebarContainer) return;
 
         // 現在の記事を取得
         const currentArticle = this.articles.find(article => article.id === this.currentArticleId);
@@ -85,26 +89,34 @@ class RelatedArticlesLoader {
 
         if (relatedArticles.length === 0) {
             this.showNoRelatedArticles(currentArticle.categoryName);
+            this.showSidebarNoRelatedArticles(currentArticle.categoryName);
             return;
         }
 
-        // 関連記事セクションを表示
-        relatedContainer.style.display = 'block';
+        // メインの関連記事セクションを表示
+        if (relatedContainer) {
+            relatedContainer.style.display = 'block';
 
-        // 関連記事リストを生成
-        const articlesList = relatedContainer.querySelector('.related-articles-list');
-        if (articlesList) {
-            articlesList.innerHTML = '';
-            relatedArticles.forEach(article => {
-                const articleCard = this.createRelatedArticleCard(article);
-                articlesList.appendChild(articleCard);
-            });
+            // 関連記事リストを生成
+            const articlesList = relatedContainer.querySelector('.related-articles-list');
+            if (articlesList) {
+                articlesList.innerHTML = '';
+                relatedArticles.forEach(article => {
+                    const articleCard = this.createRelatedArticleCard(article);
+                    articlesList.appendChild(articleCard);
+                });
+            }
+
+            // カテゴリ名を更新
+            const categoryName = relatedContainer.querySelector('.related-category-name');
+            if (categoryName) {
+                categoryName.textContent = currentArticle.categoryName;
+            }
         }
 
-        // カテゴリ名を更新
-        const categoryName = relatedContainer.querySelector('.related-category-name');
-        if (categoryName) {
-            categoryName.textContent = currentArticle.categoryName;
+        // サイドバーの関連記事を表示
+        if (sidebarContainer) {
+            this.renderSidebarRelatedArticles(relatedArticles, sidebarContainer);
         }
     }
 
@@ -199,6 +211,36 @@ class RelatedArticlesLoader {
             month: 'long',
             day: 'numeric'
         });
+    }
+
+    renderSidebarRelatedArticles(relatedArticles, sidebarContainer) {
+        if (relatedArticles.length === 0) return;
+
+        const html = relatedArticles.map(article => `
+            <div class="related-article-item">
+                <a href="${article.filename}" class="related-article-link">
+                    <h4 class="related-article-title">${article.title}</h4>
+                    <div class="related-article-meta">
+                        <span class="related-article-date">${this.formatDate(article.date)}</span>
+                        <span class="related-read-time">${article.readTime}</span>
+                    </div>
+                </a>
+            </div>
+        `).join('');
+
+        sidebarContainer.innerHTML = html;
+    }
+
+    showSidebarNoRelatedArticles(categoryName = '') {
+        const sidebarContainer = document.getElementById('related-articles-container');
+        if (!sidebarContainer) return;
+
+        sidebarContainer.innerHTML = `
+            <div class="no-related-message">
+                <p>「${categoryName}」の他の記事は現在準備中です。</p>
+                <p>新しい記事をお楽しみに！</p>
+            </div>
+        `;
     }
 }
 

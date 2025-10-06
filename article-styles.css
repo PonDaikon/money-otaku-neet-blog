@@ -1015,3 +1015,313 @@
         margin-top: 15px;
     }
 }
+
+
+/* 株の種類記事専用スタイル */
+.sector-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.sector-item {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.theme-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.theme-item {
+    background: #f8fafc;
+    color: #475569;
+    padding: 12px 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.2s ease;
+}
+
+.theme-item:hover {
+    background: #f1f5f9;
+    border-color: #cbd5e1;
+}
+
+/* バッジスタイル */
+.badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge.standard { background: #28a745; color: white; }
+.badge.priority { background: #ffc107; color: #212529; }
+.badge.dual-class { background: #6f42c1; color: white; }
+.badge.no-voting { background: #6c757d; color: white; }
+.badge.domestic { background: #007bff; color: white; }
+.badge.overseas { background: #17a2b8; color: white; }
+.badge.depositary { background: #fd7e14; color: white; }
+.badge.china { background: #dc3545; color: white; }
+.badge.large-cap { background: #28a745; color: white; }
+.badge.mid-cap { background: #ffc107; color: #212529; }
+.badge.small-cap { background: #dc3545; color: white; }
+.badge.defensive { background: #28a745; color: white; }
+.badge.cyclical { background: #fd7e14; color: white; }
+.badge.growth { background: #17a2b8; color: white; }
+.badge.value { background: #6f42c1; color: white; }
+.badge.dividend { background: #28a745; color: white; }
+.badge.dividend-growth { background: #20c997; color: white; }
+.badge.factor { background: #6c757d; color: white; }
+.badge.standard-unit { background: #007bff; color: white; }
+.badge.fractional { background: #28a745; color: white; }
+.badge.price-level { background: #6c757d; color: white; }
+.badge.ipo { background: #e83e8c; color: white; }
+.badge.po { background: #fd7e14; color: white; }
+.badge.buyback { background: #20c997; color: white; }
+.badge.wrong { background: #dc3545; color: white; }
+.badge.growth-strategy { background: #17a2b8; color: white; }
+.badge.income-strategy { background: #28a745; color: white; }
+.badge.diversified-strategy { background: #6f42c1; color: white; }
+
+/* モバイル用カード表示 */
+.mobile-cards {
+    display: none;
+}
+
+.stock-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-left: 4px solid #667eea;
+}
+
+.stock-card .card-header {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: none;
+}
+
+.stock-card .card-header h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.stock-card .card-content {
+    padding: 20px;
+}
+
+.stock-card .card-content p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.stock-card .card-content ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.stock-card .card-content li {
+    margin-bottom: 5px;
+}
+
+/* カードヘッダーの色分け */
+.card-header.legal-type { border-left: 4px solid #007bff; }
+.card-header.market-type { border-left: 4px solid #28a745; }
+.card-header.size-type { border-left: 4px solid #ffc107; }
+.card-header.sector-type { border-left: 4px solid #17a2b8; }
+.card-header.style-type { border-left: 4px solid #6f42c1; }
+.card-header.liquidity-type { border-left: 4px solid #fd7e14; }
+.card-header.event-type { border-left: 4px solid #e83e8c; }
+
+/* 誤解カード */
+.stock-card.misconception {
+    border: 2px solid #dc3545;
+    background: #fff5f5;
+}
+
+.stock-card.misconception .card-header {
+    background: linear-gradient(135deg, #dc3545, #c82333);
+    color: white;
+    border-left: none;
+}
+
+/* 戦略カード */
+.stock-card.strategy {
+    border: 2px solid #28a745;
+    background: #f8fff9;
+}
+
+.stock-card.strategy .card-header {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    color: white;
+    border-left: none;
+}
+
+/* 要約ボックス */
+.summary-box {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    color: #1e293b;
+    padding: 25px;
+    border-radius: 15px;
+    margin: 30px 0;
+    border-left: 5px solid #3b82f6;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.summary-box ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.summary-box li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* 警告ボックス */
+.warning-box {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-left: 4px solid #fdcb6e;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.warning-box p {
+    margin: 0;
+    color: #856404;
+    font-weight: 500;
+}
+
+/* ポイントボックス */
+.point-box {
+    background: #e3f2fd;
+    border: 1px solid #bbdefb;
+    border-left: 4px solid #2196f3;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.point-box p {
+    margin: 0;
+    color: #1565c0;
+    font-weight: 500;
+}
+
+/* 比較表コンテナ */
+.comparison-table-container {
+    display: block;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .comparison-table-container {
+        display: none;
+    }
+    
+    .mobile-cards {
+        display: block;
+    }
+    
+    .sector-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 8px;
+    }
+    
+    .sector-item {
+        padding: 10px;
+        font-size: 12px;
+    }
+    
+    .theme-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .theme-item {
+        padding: 12px;
+        font-size: 13px;
+    }
+    
+    .badge {
+        font-size: 10px;
+        padding: 3px 6px;
+    }
+    
+    .summary-box {
+        padding: 20px;
+    }
+    
+    .summary-box li {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sector-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+    }
+    
+    .sector-item {
+        padding: 8px;
+        font-size: 11px;
+    }
+    
+    .theme-item {
+        padding: 10px;
+        font-size: 12px;
+    }
+    
+    .summary-box {
+        padding: 15px;
+    }
+    
+    .summary-box li {
+        font-size: 13px;
+    }
+    
+    .stock-card .card-header {
+        padding: 12px 15px;
+    }
+    
+    .stock-card .card-header h4 {
+        font-size: 1rem;
+    }
+    
+    .stock-card .card-content {
+        padding: 15px;
+    }
+    
+    .badge {
+        font-size: 9px;
+        padding: 2px 5px;
+    }
+}
