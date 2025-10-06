@@ -999,3 +999,237 @@ body {
 .home-link:hover {
     transform: translateY(-1px);
 }
+
+/* 関連記事カードのスタイル */
+.related-articles-section {
+    background: #f8f9fa;
+    padding: 4rem 0;
+    border-top: 1px solid #e9ecef;
+}
+
+.related-articles-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.related-articles-header h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.related-articles-header p {
+    color: #6c757d;
+    font-size: 1.1rem;
+}
+
+.related-articles-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.related-article-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.related-article-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.related-article-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 1.5rem;
+}
+
+.related-article-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.related-article-category {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #e3f2fd;
+    color: #1976d2;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.related-article-category.mamoru {
+    background: #e8f5e8;
+    color: #2e7d32;
+}
+
+.related-article-category.huyasu {
+    background: #fff3e0;
+    color: #f57c00;
+}
+
+.related-article-category.kasegu {
+    background: #fce4ec;
+    color: #c2185b;
+}
+
+.related-article-date {
+    color: #6c757d;
+    font-size: 0.85rem;
+}
+
+.related-article-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+}
+
+.related-article-description {
+    color: #6c757d;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.related-article-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid #e9ecef;
+}
+
+.related-read-time {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #6c757d;
+    font-size: 0.85rem;
+}
+
+.related-read-more {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #667eea;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.related-article-card:hover .related-read-more {
+    color: #764ba2;
+}
+
+/* 関連記事がない場合のスタイル */
+.no-related-articles {
+    text-align: center;
+    padding: 3rem 2rem;
+    color: #6c757d;
+}
+
+.no-related-icon {
+    font-size: 3rem;
+    color: #dee2e6;
+    margin-bottom: 1rem;
+}
+
+.no-related-articles h4 {
+    color: #495057;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.no-related-articles p {
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.browse-categories {
+    margin-top: 2rem;
+}
+
+.browse-categories p {
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: #495057;
+}
+
+.browse-categories .category-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.browse-categories .category-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: white;
+    color: #495057;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.browse-categories .category-link:hover {
+    border-color: #667eea;
+    color: #667eea;
+    transform: translateY(-2px);
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    .related-articles-list {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .related-article-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .related-article-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .browse-categories .category-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .browse-categories .category-link {
+        width: 100%;
+        max-width: 200px;
+        justify-content: center;
+    }
+}

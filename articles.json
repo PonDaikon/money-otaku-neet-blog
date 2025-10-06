@@ -1,6 +1,16 @@
 {
   "articles": [
     {
+      "id": "point-ecosystem-comparison",
+      "title": "【2025年完全版】5大ポイント経済圏を徹底比較！あなたに最適な「経済圏」の選び方",
+      "description": "楽天、PayPay、dポイント、au/Ponta、Tポイントの5大経済圏を徹底比較。あなたのライフスタイルに最適なポイント経済圏の選び方を、投資、節約、キャッシュレスの観点から詳しく解説します。",
+      "date": "2025-10-07",
+      "category": "mamoru",
+      "categoryName": "守る",
+      "filename": "point-ecosystem-comparison.html",
+      "readTime": "12分で読める"
+    },
+    {
       "id": "side-hustle-guide",
       "title": "【副業完全ガイド】あなたの経験を「稼ぐ力」に変える方法",
       "description": "誰でも副業は始められる時代。あなたの経験や知識を「稼ぐ力」に変えるための具体的なステップを、実体験を交えて徹底解説します。",
