@@ -119,7 +119,8 @@
                         <h2>🇯🇵 日本の主要5大ポイント経済圏 比較一覧表</h2>
                         <p>まずは、各経済圏の全体像を一覧で把握しましょう。詳細な分析は後ほど行います。</p>
 
-                        <div class="comparison-table">
+                        <!-- デスクトップ用テーブル -->
+                        <div class="comparison-table desktop-only">
                             <table>
                                 <thead>
                                     <tr>
@@ -174,6 +175,154 @@
                                     </tr>
                                 </tbody>
                             </table>
+                        </div>
+
+                        <!-- モバイル用カード形式 -->
+                        <div class="comparison-cards mobile-only">
+                            <div class="ecosystem-card rakuten">
+                                <div class="card-header">
+                                    <h4>🟥 楽天経済圏</h4>
+                                    <span class="ecosystem-badge">投資連携◎</span>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-item">
+                                        <span class="label">企業グループ:</span>
+                                        <span class="value">楽天グループ</span>
+                                    </div>
+                                    <div class="card-item">
+                                        <span class="label">中心ポイント:</span>
+                                        <span class="value">楽天ポイント</span>
+                                    </div>
+                                    <div class="card-item">
+                                        <span class="label">主なサービス:</span>
+                                        <span class="value">ネット通販、金融、通信、旅行など、生活全般</span>
+                                    </div>
+                                    <div class="card-item">
+                                        <span class="label">投資連携:</span>
+                                        <span class="value"><strong>◎ 楽天証券</strong>でのクレカ積立（最大1%還元）、ポイント投資も可能</span>
+                                    </div>
+                                    <div class="card-item">
+                                        <span class="label">向いている人:</span>
+                                        <span class="value">ネットショッピングが多く、投資や資産形成にも関心がある人</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ecosystem-card au-ponta">
+                                <div class="card-header">
+                                    <h4>🟠 au／Ponta経済圏</h4>
+                                    <span class="ecosystem-badge">リアル店舗◎</span>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-item">
+                                        <span class="label">企業グループ:</span>
+                                        <span class="value">KDDI、ローソン、リクルート</span>
+                                    </div>
+                                    <div class="card-item">
+                                        <span class="label">中心ポイント:</span>
+                                        <span class="value">Pontaポイント</span>
+                                    </div>
+                                    <div class="card-item">
+                                        <span class="label">主なサービス:</span>
+                                        <span class="value">通信、金融、リアル店舗、旅行・飲食予約</span>
+                                    </div>
+                                    <div class="card-item">
+                                        <span class="label">投資連携:</span>
+                                        <span class="value"><strong>○ auカブコム証券</strong>でポイント投資、au PAY残高との連携もスムーズ</span>
+                                    </div>
+                                    <div class="card-item">
+                                        <span class="label">向いている人:</span>
+                                        <span class="value">auユーザー、ローソン利用者、Ponta提携店をよく使う人</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ecosystem-card d-point">
+                                <div class="card-header">
+                                    <h4>🔵 dポイント経済圏</h4>
+                                    <span class="ecosystem-badge">日常利用◎</span>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-item">
+                                        <span class="label">企業グループ:</span>
+                                        <span class="value">NTTドコモ、ローソン、マクドナルドなど</span>
+                                    </div>
+                                    <div class="card-item">
+                                        <span class="label">中心ポイント:</span>
+                                        <span class="value">dポイント</span>
+                                    </div>
+                                    <div class="card-item">
+                                        <span class="label">主なサービス:</span>
+                                        <span class="value">通信、キャッシュレス決済、日常消費</span>
+                                    </div>
+                                    <div class="card-item">
+                                        <span class="label">投資連携:</span>
+                                        <span class="value"><strong>○ SBI証券</strong>でdポイントを使った積立投資が可能</span>
+                                    </div>
+                                    <div class="card-item">
+                                        <span class="label">向いている人:</span>
+                                        <span class="value">ドコモ契約者、マクドナルドやローソンを頻繁に利用するAmazonユーザー</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ecosystem-card paypay">
+                                <div class="card-header">
+                                    <h4>🟢 PayPay経済圏</h4>
+                                    <span class="ecosystem-badge">QR決済◎</span>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-item">
+                                        <span class="label">企業グループ:</span>
+                                        <span class="value">ソフトバンク、ヤフー（ZHD）</span>
+                                    </div>
+                                    <div class="card-item">
+                                        <span class="label">中心ポイント:</span>
+                                        <span class="value">PayPayポイント</span>
+                                    </div>
+                                    <div class="card-item">
+                                        <span class="label">主なサービス:</span>
+                                        <span class="value">スマホ決済、ネット通販、金融サービス</span>
+                                    </div>
+                                    <div class="card-item">
+                                        <span class="label">投資連携:</span>
+                                        <span class="value"><strong>△ PayPay証券</strong>で少額投資が可能。今後の拡充に期待</span>
+                                    </div>
+                                    <div class="card-item">
+                                        <span class="label">向いている人:</span>
+                                        <span class="value">QRコード決済がメインで、Yahoo!ショッピングやZOZOTOWNをよく利用する人</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ecosystem-card t-point">
+                                <div class="card-header">
+                                    <h4>🟣 Tポイント経済圏</h4>
+                                    <span class="ecosystem-badge">ウエル活◎</span>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-item">
+                                        <span class="label">企業グループ:</span>
+                                        <span class="value">CCC、SBIグループ</span>
+                                    </div>
+                                    <div class="card-item">
+                                        <span class="label">中心ポイント:</span>
+                                        <span class="value">Tポイント</span>
+                                    </div>
+                                    <div class="card-item">
+                                        <span class="label">主なサービス:</span>
+                                        <span class="value">コンビニ、ドラッグストア、ガソリンスタンドなど</span>
+                                    </div>
+                                    <div class="card-item">
+                                        <span class="label">投資連携:</span>
+                                        <span class="value"><strong>◎ SBI証券</strong>でTポイント投資が可能。「ウエル活」との相性も抜群</span>
+                                    </div>
+                                    <div class="card-item">
+                                        <span class="label">向いている人:</span>
+                                        <span class="value">SBI証券の利用者、ウエルシア薬局で「ウエル活」を実践したい人</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </section>
 
@@ -443,6 +592,17 @@
                                 <i class="fas fa-laptop-code"></i>
                                 稼ぐ
                             </a>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-widget">
+                        <h3>おすすめ商品</h3>
+                        <div class="rakuten-widget-container">
+                            <!-- Rakuten Widget FROM HERE -->
+                            <script type="text/javascript">rakuten_affiliateId="0ea62065.34400275.0ea62066.204f04c0";rakuten_items="ranking";rakuten_genreId="0";rakuten_recommend="on";rakuten_design="slide";rakuten_size="120x600";rakuten_target="_blank";rakuten_border="on";rakuten_auto_mode="on";rakuten_adNetworkId="a8Net";rakuten_adNetworkUrl="https%3A%2F%2Frpx.a8.net%2Fsvt%2Fejp%3Fa8mat%3D45FY5W%2BFFHG6Q%2B2HOM%2BBS629%26rakuten%3Dy%26a8ejpredirect%3D";rakuten_pointbackId="a25100629188_45FY5W_FFHG6Q_2HOM_BS629";rakuten_mediaId="20011811";</script>
+                            <script type="text/javascript" src="//xml.affiliate.rakuten.co.jp/widget/js/rakuten_widget.js"></script>
+                            <!-- Rakuten Widget TO HERE -->
+                            <img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=45FY5W+FFHG6Q+2HOM+BS629" alt="">
                         </div>
                     </div>
                 </aside>
