@@ -1,6 +1,16 @@
 {
   "articles": [
     {
+      "id": "manus-web-side-business-guide",
+      "title": "💻 初心者でもできる！Manusを使ったWeb副業アイデアまとめ",
+      "description": "スキルがなくてもAIが手伝ってくれる時代。Manusを活用したブログ・SNS運用・リサーチ代行など、初心者でも始められるWeb副業アイデアを具体的に解説します。",
+      "date": "2025-10-07",
+      "category": "kasegu",
+      "categoryName": "稼ぐ",
+      "filename": "manus-web-side-business-guide.html",
+      "readTime": "12分で読める"
+    },
+    {
       "id": "life-insurance-vs-index-investment",
       "title": "🛡️ 生命保険 vs インデックス投資｜「守り」か「育てる」か。どちらがあなたの人生を豊かにするか？",
       "description": "生命保険とインデックス投資、どちらが本当にあなたの人生を豊かにするか？35年間の具体的シミュレーションで比較し、合理的な資産形成戦略を解説します。",
