@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "id": "life-insurance-vs-index-investment",
+      "title": "🛡️ 生命保険 vs インデックス投資｜「守り」か「育てる」か。どちらがあなたの人生を豊かにするか？",
+      "description": "生命保険とインデックス投資、どちらが本当にあなたの人生を豊かにするか？35年間の具体的シミュレーションで比較し、合理的な資産形成戦略を解説します。",
+      "date": "2025-10-07",
+      "category": "mamoru",
+      "categoryName": "守る",
+      "filename": "life-insurance-vs-index-investment.html",
+      "readTime": "10分で読める"
+    },
+    {
+      "id": "side-business-tax-guide",
+      "title": "💼 副業を始めたらまず読むガイド｜開業届と確定申告のタイミング完全解説",
+      "description": "副業の開業届と確定申告はいつ出すべき？20万円ルールから青色申告のメリット、住民税対策まで、副業初心者が知るべき税務知識を完全解説します。",
+      "date": "2025-10-07",
+      "category": "kasegu",
+      "categoryName": "稼ぐ",
+      "filename": "side-business-tax-guide.html",
+      "readTime": "12分で読める"
+    },
+    {
       "id": "investment-trust-guide",
       "title": "🏦 はじめての投資信託ガイド｜S&P500・オルカン・eMAXIS Slim・楽天ファンドをやさしく理解する",
       "description": "投資信託初心者向けに、S&P500・オルカン・eMAXIS Slim・楽天ファンドの違いを分かりやすく解説。信託報酬の仕組みから選び方まで、つみたてNISAで始める投資信託の基本を完全ガイド。",
