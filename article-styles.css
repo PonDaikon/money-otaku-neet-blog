@@ -1099,9 +1099,9 @@
 .badge.income-strategy { background: #28a745; color: white; }
 .badge.diversified-strategy { background: #6f42c1; color: white; }
 
-/* モバイル用カード表示 */
+/* カード表示（PC・モバイル共通） */
 .mobile-cards {
-    display: none;
+    display: block;
 }
 
 .stock-card {
