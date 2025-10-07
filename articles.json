@@ -1,6 +1,16 @@
 {
   "articles": [
     {
+      "id": "investment-trust-guide",
+      "title": "🏦 はじめての投資信託ガイド｜S&P500・オルカン・eMAXIS Slim・楽天ファンドをやさしく理解する",
+      "description": "投資信託初心者向けに、S&P500・オルカン・eMAXIS Slim・楽天ファンドの違いを分かりやすく解説。信託報酬の仕組みから選び方まで、つみたてNISAで始める投資信託の基本を完全ガイド。",
+      "date": "2025-10-07",
+      "category": "huyasu",
+      "categoryName": "殖やす",
+      "filename": "investment-trust-guide.html",
+      "readTime": "10分で読める"
+    },
+    {
       "id": "point-ecosystem-comparison",
       "title": "【2025年完全版】5大ポイント経済圏を徹底比較！あなたに最適な「経済圏」の選び方",
       "description": "楽天、PayPay、dポイント、au/Ponta、Tポイントの5大経済圏を徹底比較。あなたのライフスタイルに最適なポイント経済圏の選び方を、投資、節約、キャッシュレスの観点から詳しく解説します。",

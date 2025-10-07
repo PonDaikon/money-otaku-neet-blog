@@ -256,7 +256,7 @@
                             <!-- Rakuten Widget FROM HERE --><script type="text/javascript">rakuten_affiliateId="0ea62065.34400275.0ea62066.204f04c0";rakuten_items="ranking";rakuten_genreId="0";rakuten_recommend="on";rakuten_design="slide";rakuten_size="300x250";rakuten_target="_blank";rakuten_border="on";rakuten_auto_mode="on";rakuten_adNetworkId="a8Net";rakuten_adNetworkUrl="https%3A%2F%2Frpx.a8.net%2Fsvt%2Fejp%3Fa8mat%3D45FY5W%2BFFHG6Q%2B2HOM%2BBS629%26rakuten%3Dy%26a8ejpredirect%3D";rakuten_pointbackId="a25100629188_45FY5W_FFHG6Q_2HOM_BS629";rakuten_mediaId="20011811";</script><script type="text/javascript" src="//xml.affiliate.rakuten.co.jp/widget/js/rakuten_widget.js"></script><!-- Rakuten Widget TO HERE -->
                         </div>
                         <img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=45FY5W+FFHG6Q+2HOM+BS629" alt="">
-                    </div>div>
+                    </div>
             </div>
         </div>
     </section>
@@ -269,16 +269,23 @@
                     <span class="footer-brand-text">マネオタニートの金融オタロード</span>
                 </div>
                 <div class="footer-links">
-                    <a href="categories/mamoru.html">守る</a>
-                    <a href="categories/huyasu.html">殖やす</a>
-                    <a href="categories/kasegu.html">稼ぐ</a>
-                    <a href="#about">プロフィール</a>
-                    <a href="#contact">お問い合わせ</a>
+                    <a href="mailto:money.otaku.neet@gmail.com" class="footer-link">
+                        <i class="fas fa-envelope"></i>
+                        お問い合わせ
+                    </a>
+                    <a href="https://x.com/money_ota_neet" target="_blank" rel="noopener noreferrer" class="footer-link">
+                        <i class="fab fa-twitter"></i>
+                        Twitter
+                    </a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe4Gno0b2Ev3ZQ3mJeM2_YSAeTKORvzsqMxawwUZeuYgOzE7Q/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="footer-link">
+                        <i class="fas fa-comment-dots"></i>
+                        お問い合わせフォーム
+                    </a>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 マネオタニートの金融オタロード. All rights reserved.</p>
-                <p>免責事項: このブログの内容は個人の体験に基づくものです。投資判断は自己責任でお願いします。</p>
+                <p class="disclaimer">免責事項: このブログの内容は個人の体験に基づくものです。投資判断は自己責任でお願いいたします。</p>
             </div>
         </div>
     </footer>
@@ -286,8 +293,9 @@
     <!-- トップページ用記事読み込みスクリプト -->
     <script src="home-articles-loader.js"></script>
     
+    <script src="category-counter.js"></script>
     <script>
-        // Simple mobile navigation toggle
+        // ナビゲーションメニューのトグル
         document.querySelector('.nav-toggle').addEventListener('click', function() {
             document.querySelector('.nav-overlay').classList.add('active');
         });

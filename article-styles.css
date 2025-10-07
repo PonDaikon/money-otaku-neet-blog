@@ -1098,6 +1098,16 @@
 .badge.growth-strategy { background: #17a2b8; color: white; }
 .badge.income-strategy { background: #28a745; color: white; }
 .badge.diversified-strategy { background: #6f42c1; color: white; }
+.badge.low-cost { background: #28a745; color: white; }
+.badge.point-benefit { background: #ff6b35; color: white; }
+.badge.rakuten { background: #bf0000; color: white; }
+.badge.emaxis { background: #0066cc; color: white; }
+.badge.us-focused { background: #1e40af; color: white; }
+.badge.global { background: #059669; color: white; }
+.badge.developed { background: #7c3aed; color: white; }
+.badge.emerging { background: #dc2626; color: white; }
+.badge.japan { background: #dc2626; color: white; }
+.badge.balanced-strategy { background: #f59e0b; color: white; }
 
 /* カード表示（PC・モバイル共通） */
 .mobile-cards {
@@ -1324,4 +1334,76 @@
         font-size: 9px;
         padding: 2px 5px;
     }
+}
+
+/* 投資信託ガイド記事用スタイル */
+.brand-type { border-left: 4px solid #667eea; }
+.fund-type { border-left: 4px solid #28a745; }
+
+.recommendation-box {
+    background: linear-gradient(135deg, #e8f5e8 0%, #f0f8f0 100%);
+    color: #1e293b;
+    padding: 25px;
+    border-radius: 15px;
+    margin: 30px 0;
+    border-left: 5px solid #28a745;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.recommendation-item {
+    margin-bottom: 15px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+
+.recommendation-item h5 {
+    margin: 0 0 8px 0;
+    color: #059669;
+}
+
+.choice-guide {
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    background: rgba(102, 126, 234, 0.1);
+    border-radius: 10px;
+}
+
+.choice-guide p {
+    margin: 5px 0;
+    font-weight: 600;
+    color: #4c1d95;
+}
+
+.final-message {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+    border-left: 5px solid #f59e0b;
+}
+
+.final-message h4 {
+    color: #92400e;
+    margin-bottom: 15px;
+}
+
+.final-message p {
+    margin: 8px 0;
+    color: #451a03;
+    font-weight: 500;
+}
+
+.example-box {
+    background: rgba(139, 92, 246, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    border-left: 4px solid #8b5cf6;
+}
+
+.example-box h4 {
+    color: #5b21b6;
+    margin-bottom: 10px;
 }
