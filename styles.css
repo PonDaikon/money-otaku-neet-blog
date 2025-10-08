@@ -188,6 +188,15 @@ body {
     animation: bounce 2s infinite;
 }
 
+.hero-profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
 .character-speech {
     background: white;
     color: #333;
@@ -442,6 +451,15 @@ body {
     font-size: 4rem;
     color: white;
     animation: bounce 3s infinite;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .character-name {
