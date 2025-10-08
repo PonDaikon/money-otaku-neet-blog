@@ -1,6 +1,16 @@
 {
   "articles": [
     {
+      "id": "doujin-business-registration-guide",
+      "title": "🎨 創作活動を「趣味」で終わらせないために｜開業届と確定申告で「経費通算」すれば、あなたの創作費は節税になるかも！",
+      "description": "同人誌、自作ボードゲーム、BOOTH販売など創作活動をしているなら開業届を出すべき理由を解説。赤字でも経費通算で節税効果があります。",
+      "date": "2025-10-07",
+      "category": "kasegu",
+      "categoryName": "稼ぐ",
+      "filename": "doujin-business-registration-guide.html",
+      "readTime": "12分で読める"
+    },
+    {
       "id": "manus-web-side-business-guide",
       "title": "💻 初心者でもできる！Manusを使ったWeb副業アイデアまとめ",
       "description": "スキルがなくてもAIが手伝ってくれる時代。Manusを活用したブログ・SNS運用・リサーチ代行など、初心者でも始められるWeb副業アイデアを具体的に解説します。",

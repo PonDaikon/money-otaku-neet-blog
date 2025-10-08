@@ -207,6 +207,10 @@
     <script>
         // ナビゲーションメニューのトグル
         document.querySelector('.nav-toggle').addEventListener('click', function() {
+
+        document.querySelector(".nav-close").addEventListener("click", function() {
+            document.querySelector(".nav-overlay").classList.remove("active");
+        });
             document.querySelector('.nav-menu').classList.toggle('active');
         });
 

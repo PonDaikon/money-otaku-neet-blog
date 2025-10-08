@@ -275,14 +275,23 @@
     <script src="../related-articles-loader.js"></script>
     
     <script>
-        // Simple mobile navigation toggle
-        document.querySelector('.nav-toggle').addEventListener('click', function() {
-            document.querySelector('.nav-overlay').classList.add('active');
+        // ナビゲーションメニューのトグル
+        document.querySelector(".nav-toggle").addEventListener("click", function() {
+
+        document.querySelector(".nav-close").addEventListener("click", function() {
+            document.querySelector(".nav-overlay").classList.remove("active");
+        });
+            document.querySelector(".nav-overlay").classList.add("active");
         });
 
-        document.querySelector('.nav-close').addEventListener('click', function() {
-            document.querySelector('.nav-overlay').classList.remove('active');
+
+        // Close overlay when clicking on nav items
+        document.querySelectorAll(".nav-item").forEach(item => {
+            item.addEventListener("click", function() {
+                document.querySelector(".nav-overlay").classList.remove("active");
+            });
         });
+
 
         // ページ読み込み完了後に関連記事を読み込み
         // 注意: 'your-article-id' を実際の記事IDに変更してください

@@ -55,14 +55,14 @@
         
         <!-- Mobile Navigation Overlay -->
         <div class="nav-overlay">
-            <div class="nav-overlay-content">
+            <div class="nav-content">
                 <button class="nav-close">&times;</button>
-                <nav class="nav-mobile">
-                    <a href="../categories/mamoru.html" class="nav-link-mobile">守る</a>
-                    <a href="../categories/huyasu.html" class="nav-link-mobile">殖やす</a>
-                    <a href="../categories/kasegu.html" class="nav-link-mobile">稼ぐ</a>
-                    <a href="../index.html#about" class="nav-link-mobile">プロフィール</a>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-iAptb3RiLg3zFxoeEZq2HJ11T3U0V3LDihSzvgXo9iVDWw/viewform?usp=dialog" target="_blank" class="nav-link-mobile">お問い合わせ</a>
+                <nav class="nav-items">
+                    <a href="../categories/mamoru.html" class="nav-item">守る</a>
+                    <a href="../categories/huyasu.html" class="nav-item">殖やす</a>
+                    <a href="../categories/kasegu.html" class="nav-item">稼ぐ</a>
+                    <a href="../index.html#about" class="nav-item">プロフィール</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-iAptb3RiLg3zFxoeEZq2HJ11T3U0V3LDihSzvgXo9iVDWw/viewform?usp=dialog" target="_blank" class="nav-item">お問い合わせ</a>
                 </nav>
             </div>
         </div>
@@ -549,14 +549,23 @@
     <script src="../related-articles-loader.js"></script>
     
     <script>
-        // Simple mobile navigation toggle
-        document.querySelector('.nav-toggle').addEventListener('click', function() {
-            document.querySelector('.nav-overlay').classList.add('active');
+        // ナビゲーションメニューのトグル
+        document.querySelector(".nav-toggle").addEventListener("click", function() {
+
+        document.querySelector(".nav-close").addEventListener("click", function() {
+            document.querySelector(".nav-overlay").classList.remove("active");
+        });
+            document.querySelector(".nav-overlay").classList.add("active");
         });
 
-        document.querySelector('.nav-close').addEventListener('click', function() {
-            document.querySelector('.nav-overlay').classList.remove('active');
+
+        // Close overlay when clicking on nav items
+        document.querySelectorAll(".nav-item").forEach(item => {
+            item.addEventListener("click", function() {
+                document.querySelector(".nav-overlay").classList.remove("active");
+            });
         });
+
 
         // ページ読み込み完了後に関連記事を読み込み
         document.addEventListener('DOMContentLoaded', () => {

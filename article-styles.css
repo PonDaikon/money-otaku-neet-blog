@@ -756,11 +756,19 @@
 
 /* デスクトップ・モバイル表示切り替え */
 .desktop-only {
-    display: block;
+    display: block !important;
 }
 
 .mobile-only {
-    display: none;
+    display: none !important;
+}
+
+.mobile-cards {
+    display: none !important;
+}
+
+.comparison-table {
+    display: block !important;
 }
 
 /* 強制的にモバイル表示を適用 */
@@ -773,7 +781,12 @@
         display: block !important;
     }
     
+    .mobile-cards {
+        display: block !important;
+    }
+    
     /* テーブルを完全に非表示 */
+    .comparison-table,
     .comparison-table table {
         display: none !important;
     }
@@ -2881,5 +2894,91 @@
         width: 100%;
         max-width: 250px;
         justify-content: center;
+    }
+}
+
+/* モバイル版の追加はみ出し対策 */
+@media (max-width: 768px) {
+    /* 全体のコンテナ幅制限 */
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+        overflow-x: hidden;
+    }
+    
+    .content-wrapper {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0;
+    }
+    
+    .main-content {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    /* テーブルのはみ出し防止 */
+    .comparison-table table {
+        width: 100%;
+        table-layout: fixed;
+        word-wrap: break-word;
+    }
+    
+    /* カードのはみ出し防止 */
+    .mobile-cards .mobile-card {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: 0 0 15px 0;
+        padding: 15px;
+    }
+    
+    /* 副業アイデアカードのはみ出し防止 */
+    .side-business-ideas {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .side-business-card {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: 0 0 20px 0;
+    }
+    
+    /* CTAボタンのはみ出し防止 */
+    .final-cta,
+    .cta-button,
+    .manus-cta-button {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .cta-button a,
+    .manus-cta-button a {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        display: block;
+    }
+    
+    /* 画像のはみ出し防止 */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* 長いテキストの改行 */
+    h1, h2, h3, h4, h5, h6 {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    
+    p, li, span {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 }
