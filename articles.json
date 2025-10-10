@@ -1,6 +1,16 @@
 {
   "articles": [
     {
+      "id": "individual-stock-analysis-guide",
+      "title": "📊 個別株投資の見極め方｜株価よりも「出来高」と「流れ」を読む",
+      "description": "個別株投資で重要なのは株価の高低ではなく、出来高と資金の流れです。トレンドライン分析、信用残高の見方、ファンダメンタルズ分析まで、プロが実際に使っている株式投資の見極め方を初心者向けに分かりやすく解説します。",
+      "date": "2025-10-08",
+      "category": "huyasu",
+      "categoryName": "殖やす",
+      "filename": "individual-stock-analysis-guide.html",
+      "readTime": "15分で読める"
+    },
+    {
       "id": "doujin-business-registration-guide",
       "title": "🎨 創作活動を「趣味」で終わらせないために｜開業届と確定申告で「経費通算」すれば、あなたの創作費は節税になるかも！",
       "description": "同人誌、自作ボードゲーム、BOOTH販売など創作活動をしているなら開業届を出すべき理由を解説。赤字でも経費通算で節税効果があります。",
