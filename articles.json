@@ -1,6 +1,16 @@
 {
   "articles": [
     {
+      "id": "point-activity-savings-guide",
+      "title": "💰 【最新版】ポイ活で節約を極める！｜利回り1%を上げるより、支出を1%取り戻せ",
+      "description": "ポイ活は単なるお得活動ではなく、キャッシュフロー最適化の手法です。楽天経済圏、PayPay経済圏の活用法から、ハピタス・モッピー経由でのポイント増加まで、投資で年利1%上げるより確実な節約術を解説します。",
+      "date": "2025-10-08",
+      "category": "mamoru",
+      "categoryName": "守る",
+      "filename": "point-activity-savings-guide.html",
+      "readTime": "12分で読める"
+    },
+    {
       "id": "individual-stock-analysis-guide",
       "title": "📊 個別株投資の見極め方｜株価よりも「出来高」と「流れ」を読む",
       "description": "個別株投資で重要なのは株価の高低ではなく、出来高と資金の流れです。トレンドライン分析、信用残高の見方、ファンダメンタルズ分析まで、プロが実際に使っている株式投資の見極め方を初心者向けに分かりやすく解説します。",
