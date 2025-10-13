@@ -1,6 +1,16 @@
 {
   "articles": [
     {
+      "id": "small-scale-industry-economics",
+      "title": "💡 小規模産業で生きるための経済学｜お金は悪じゃない。創作を動かすガソリンだ",
+      "description": "「好きなことで生きる」を現実にするには経済を学ぶしかない。小規模産業・個人クリエイターが文化を経済に変えるための考え方と、実際に成功しているモデルを紹介。ボードゲーム産業の事例から学ぶ、小さな産業でも自立できる3つの仕組みを解説します。",
+      "date": "2025-10-08",
+      "category": "kasegu",
+      "categoryName": "稼ぐ",
+      "filename": "small-scale-industry-economics.html",
+      "readTime": "15分で読める"
+    },
+    {
       "id": "point-activity-savings-guide",
       "title": "💰 【最新版】ポイ活で節約を極める！｜利回り1%を上げるより、支出を1%取り戻せ",
       "description": "ポイ活は単なるお得活動ではなく、キャッシュフロー最適化の手法です。楽天経済圏、PayPay経済圏の活用法から、ハピタス・モッピー経由でのポイント増加まで、投資で年利1%上げるより確実な節約術を解説します。",
