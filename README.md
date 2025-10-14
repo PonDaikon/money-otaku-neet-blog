@@ -1,3 +1,7 @@
+# ページURL
+
+https://pondaikon.github.io/money-otaku-neet-blog/index.html
+
 # マネオタニートの金融オタロード
 
 前職の貯蓄を切り崩しながら、家族4人での生活を支えつつ、賢い資産運用を探究する金融実践ブログ
@@ -23,33 +27,6 @@
 
 このブログシステムは、**HTTPサーバー経由でのアクセスが必要**です。ファイルを直接ブラウザで開く（file://プロトコル）と、記事が正しく表示されません。
 
-### 推奨セットアップ方法
-
-#### 方法1: Python簡易サーバー（推奨）
-```bash
-# ブログディレクトリに移動
-cd money-otaku-neet-blog
-
-# HTTPサーバーを起動
-python3 -m http.server 8080
-
-# ブラウザで http://localhost:8080 にアクセス
-```
-
-#### 方法2: Node.js簡易サーバー
-```bash
-# ブログディレクトリに移動
-cd money-otaku-neet-blog
-
-# HTTPサーバーを起動
-npx http-server -p 8080
-
-# ブラウザで http://localhost:8080 にアクセス
-```
-
-#### 方法3: Webサーバーへのアップロード
-- Apache、Nginx、またはレンタルサーバーにファイルをアップロード
-- 通常のWebサイトとしてアクセス
 
 ## ファイル構成
 
@@ -71,19 +48,6 @@ money-otaku-neet-blog/
     ├── huyasu.html               # 殖やすカテゴリ
     └── kasegu.html               # 稼ぐカテゴリ
 ```
-
-## 主要記事
-
-### 守る（節約・ポイ活）
-1. **【2025年完全版】5大ポイント経済圏を徹底比較！** - 楽天・PayPay・d・au・Tポイントの特徴と選び方
-2. **【入門】今日から始めるポイ活ロードマップ** - 初心者向けポイントサイト活用法
-3. **【固定費削減】通信費と光熱費を見直す完全ガイド** - 生活の質を落とさない節約術
-
-### 殖やす（投資・資産運用）
-1. **【新NISA完全ガイド】最速で始める楽天証券！** - ポイ活と連携した投資戦略
-
-### 稼ぐ（副業・収入増加）
-1. **【副業実践ガイド】在宅ワークで月5万円を目指す方法** - 実践的な副業ノウハウ
 
 ## 使用技術
 
@@ -135,9 +99,9 @@ money-otaku-neet-blog/
 
 ## お問い合わせ
 
-- **メール**: [メールアドレス]
-- **Twitter**: [@アカウント名]
-- **お問い合わせフォーム**: [フォームURL]
+- **メール**: [money.otaku.neet@gmail.com]
+- **Twitter**: [https://x.com/money_ota_neet]
+- **お問い合わせフォーム**: [https://docs.google.com/forms/d/e/1FAIpQLSe4Gno0b2Ev3ZQ3mJeM2_YSAeTKORvzsqMxawwUZeuYgOzE7Q/viewform?usp=dialog]
 
 ---
 
