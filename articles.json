@@ -1,5 +1,15 @@
 {
   "articles": [
+        {
+      "id": "systematic-investment-success-principles",
+      "title": "🧭 積立投資の成功法則｜長期で\"勝ち続ける人\"が守るたった3つの原則",
+      "description": "積立投資で成功する人には共通の3つの法則があります。ドルコスト平均法、分散投資、低コストファンドの選び方から、10年・20年続けた場合のシミュレーション結果まで、長期投資で負けない戦略を詳しく解説します。",
+      "date": "2025-10-14",
+      "category": "huyasu",
+      "categoryName": "殖やす",
+      "filename": "systematic-investment-success-principles.html",
+      "readTime": "12分で読める"
+    },
     {
       "id": "small-scale-industry-economics",
       "title": "💡 小規模産業で生きるための経済学｜お金は悪じゃない。創作を動かすガソリンだ",
