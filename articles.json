@@ -1,6 +1,16 @@
 {
   "articles": [
-        {
+    {
+      "id": "manecomo-money-education-review",
+      "title": "💰 マネコモって本当に稼げるの？｜「お金を殖やす前に、守る力」を育てる新しいマネー講座",
+      "description": "マネコモは単なる投資スクールではなく、「守る」「殖やす」「稼ぐ」の3軸で一生お金に困らない人を育てる仕組み。他の投資スクールやFPサービスとの違いから、本当の意味での「稼げる力」について詳しく解説します。",
+      "date": "2025-10-15",
+      "category": "kasegu",
+      "categoryName": "稼ぐ",
+      "filename": "manecomo-money-education-review.html",
+      "readTime": "15分で読める"
+    },
+    {
       "id": "systematic-investment-success-principles",
       "title": "🧭 積立投資の成功法則｜長期で\"勝ち続ける人\"が守るたった3つの原則",
       "description": "積立投資で成功する人には共通の3つの法則があります。ドルコスト平均法、分散投資、低コストファンドの選び方から、10年・20年続けた場合のシミュレーション結果まで、長期投資で負けない戦略を詳しく解説します。",
