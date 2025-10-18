@@ -1,5 +1,15 @@
 {
   "articles": [
+        {
+      "id": "rakuten-special-days-guide",
+      "title": "【最新版】楽天の「◯◯の日」まとめ",
+      "description": "楽天市場の「5と0のつく日」「ワンダフルデー」「育児の日」など、毎月のポイントアップキャンペーンを日付順に完全解説。併用テクニックと早見表で、お得に買い物するコツを紹介します。",
+      "date": "2025-10-18",
+      "category": "mamoru",
+      "categoryName": "守る",
+      "filename": "rakuten-special-days-guide.html",
+      "readTime": "10分で読める"
+    },
     {
       "id": "manecomo-money-education-review",
       "title": "💰 マネコモって本当に稼げるの？｜「お金を殖やす前に、守る力」を育てる新しいマネー講座",
